@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset = "utf-8">
+		<title>myLogin</title>
+		<link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script" rel="stylesheet">
+		<style>
+                body
+		{
+			font-family: 'Nanum Brush Script', cursive;
+			font-size: 23px;
+                }
+		.signup {
+			width: 100px;
+			text-align: right;
+		}
+		#signup {
+			border-top: solid 2px #cccccc;
+			border-bottom: solid 2px #cccccc;
+		}
+		</style>
+	</head>
+
+	<body leftmargin="70">
+		<h2> 회원가입</h2>
+		<form name="signup" method="post" id="signup" action="print_db.php">
+		<table cellpadding="4">
+			<tr>
+			<td>이름:</td>
+			<td><input type="text" placeholder="NAME" name="user_name" maxlength="20"/></td>
+			</tr>
+
+			<tr>
+			<td>아이디:</td>
+			<td><input type="text" placeholder="ID" maxlength="20" name="user_id"/></td>
+			</tr>
+
+			<tr>
+			<td>비밀번호:</td>
+			<td><input type="password" placeholder="PASSWORD" maxlength="20" name="user_pw"/></td>
+			</tr>
+
+			<tr>
+			<td>비밀번호 확인:</td>
+			<td><input type="password" placeholder="PW CONFIRM" maxlength="20" name="user_pwc"/></td>
+			</tr>
+
+			<tr>
+			<td>생년월일</td>
+			<td><select name="user_birth_year">
+				<option value="1989">1989</option>
+				<option value="1990">1990</option>
+				<option value="1991">1991</option>
+				<option value="1992">1992</option>
+				<option value="1993">1993</option>
+				<option value="1994">1994</option>
+				<option value="1995">1995</option>
+				<option value="1996">1996</option>
+				<option value="1997">1997</option>
+				<option value="1998">1998</option>
+				<option value="1999">1999</option>
+				<option value="2000" selected="selected">2000</option>
+				<option value="2001">2001</option>
+				<option value="2002">2002</option>
+			</select>
+			년
+			<select name="user_birth_month">
+				<option value="1" selected="selected">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+			</select>
+			월
+			<select name="user_birth_day">
+				<option value="1" selected="selected">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+				<option value="25">25</option>
+				<option value="26">26</option>
+				<option value="27">27</option>
+				<option value="28">28</option>
+				<option value="29">29</option>
+				<option value="30">30</option>
+				<option value="31">31</option>
+			</select>
+			일
+			</td>
+			</tr>
+			<tr>
+				<td>성별</td>
+				<td><input type="radio" name="check_sex" value="남자">남자
+				    <input type="radio" name="check_sex" value="여자">여자
+				
+			<tr>
+				<td></td>
+				<td><label><input type="checkbox">개인정보 제공에 동의합니다.</label></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input style="color:white; background:black; border-radius:0.5em;" type="submit" name="submit" value="완료"/></td>
+			</tr>
+		</table>
+		
+		</form>
+		<button style="color:white; background: black; height:65px; width:65px;" onclick="window.location.href='login.html'">HOME</button>
+	</body>
+</html>
+

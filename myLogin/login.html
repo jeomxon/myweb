@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+	<head>
+		<meta charset = "utf-8">
+		<title>myLogin</title>
+		<link href="https://fonts.googleapis.com/css?family=Nanum+Brush+Script" rel="stylesheet">
+		<style>
+		body
+		{
+			font-family: 'Nanum Brush Script', cursive;
+			font-size: 23px;
+		}
+
+		</style>
+	</head>
+
+	<body bgcolor="white" leftmargin="70">
+		<h2>^_^</h2>
+		<fieldset style="width:22%;" align="center">
+		<legend><b>[ 로그인 ]</b></legend>
+		<form action="login_ok.php" name="login_form" method="post" id="login_form">
+			<table cellpadding="5">
+				<tr>
+				<td>아이디  :</td>
+				<td><input type="text" name="user_id" placeholder="ID" size="15" maxlength="20"></td>
+				<td rowspan="2"><input type="submit" value="로그인" style="color:white; background: black; border-radius:0.5em; height:70px;"></td>
+				</tr>
+				<tr>
+				<td>비밀번호:</td>
+				<td><input type="password" name="user_pw" placeholder="PASSWORD" size="15" maxlength="20"></td>
+				</tr>
+
+				<tr>
+					<td></td>
+					<td><a href='signup.html'>회원가입</a></td>
+				</tr>
+			</table>
+		</form>
+		</fieldset>
+	</body>
+</html>
